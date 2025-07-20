@@ -5,7 +5,7 @@ const getDate = document.querySelector(".date");
 
 function setDate() {
     let today = new Date();
-    const todayDate = today.toUTCString();
+    let todayDate = today.toLocaleTimeString();
     getDate.innerHTML = `<p>${todayDate}</p>`;
 }
 
